@@ -5,13 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Roulette74</title>
+  <title>Octopress Useful Command - Roulette74</title>
   <meta name="author" content="Roulette">
 
   
-  <meta name="description" content=" Blog Archive 2014 Octopress Useful Command
-Dec 29 2014 Vim Navigation
-Dec 29 2014 Recent Posts Octopress Useful Command Vim Navigation ">
+  <meta name="description" content="Setup Octopress: &gt; git clone git://github.com/imathis/octopress.git octopress
+&gt; cd octopress
+&gt; gem install bundler
+&gt; rbenv rehash # If &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +21,7 @@ Dec 29 2014 Recent Posts Octopress Useful Command Vim Navigation ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://roulette74.github.io/blog/archives">
+  <link rel="canonical" href="http://roulette74.github.io/blog/2014/12/29/octopress-useful-command">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Roulette74" type="application/atom+xml">
@@ -66,41 +67,104 @@ Dec 29 2014 Recent Posts Octopress Useful Command Vim Navigation ">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">Octopress Useful Command</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-12-29T21:00:37+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>9:00 pm</span></time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>Setup Octopress:</p>
 
-  
-  <h2>2014</h2>
+<pre><code>&gt; git clone git://github.com/imathis/octopress.git octopress
+&gt; cd octopress
+&gt; gem install bundler
+&gt; rbenv rehash # If you use rbenv, rehash to be able to run the bundle command
+&gt; bunde install
+&gt; rake install
+&gt; # create a new github repository called &lt;username&gt;.github.io
+&gt; rake setup_github_pages
+&gt; &gt; git@github.com:&lt;username&gt;/&lt;username&gt;.github.io.git
+&gt; 
+</code></pre>
 
-<article>
-  
-<h1><a href="/blog/2014/12/29/octopress-useful-command/">Octopress Useful Command</a></h1>
-<time datetime="2014-12-29T21:00:37+08:00" pubdate><span class='month'>Dec</span> <span class='day'>29</span> <span class='year'>2014</span></time>
+<p>Generate new post(The markdown fill will be created at source/_posts):</p>
 
+<pre><code>&gt; rake new_post["octopress useful command"]
+&gt; rake new_page[super-awesome/page.html]
+</code></pre>
 
-</article>
+<p>Generate content:</p>
 
+<pre><code>&gt; rake generate
+</code></pre>
 
+<p>Preview content:</p>
 
-<article>
-  
-<h1><a href="/blog/2014/12/29/vim-navigation/">Vim Navigation</a></h1>
-<time datetime="2014-12-29T20:52:38+08:00" pubdate><span class='month'>Dec</span> <span class='day'>29</span> <span class='year'>2014</span></time>
+<pre><code>&gt; rake preview
+</code></pre>
 
+<p>Deploy your blog content:</p>
 
-</article>
+<pre><code>&gt; rake deploy
+</code></pre>
 
+<p>Don&rsquo;t forget to push your source code:</p>
+
+<pre><code>&gt; git add.
+&gt; git commit -m 'commit message'
+&gt; git push origin source
+</code></pre>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Roulette</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-12-29T21:00:37+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>9:00 pm</span></time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://roulette74.github.io/blog/2014/12/29/octopress-useful-command/" data-via="" data-counturl="http://roulette74.github.io/blog/2014/12/29/octopress-useful-command/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/12/29/vim-navigation/" title="Previous Post: Vim Navigation">&laquo; Vim Navigation</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

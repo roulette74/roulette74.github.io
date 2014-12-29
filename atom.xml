@@ -4,7 +4,7 @@
   <title><![CDATA[Roulette74]]></title>
   <link href="http://roulette74.github.io/atom.xml" rel="self"/>
   <link href="http://roulette74.github.io/"/>
-  <updated>2014-12-29T20:56:48+08:00</updated>
+  <updated>2014-12-29T21:22:15+08:00</updated>
   <id>http://roulette74.github.io/</id>
   <author>
     <name><![CDATA[Roulette]]></name>
@@ -12,6 +12,55 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress Useful Command]]></title>
+    <link href="http://roulette74.github.io/blog/2014/12/29/octopress-useful-command/"/>
+    <updated>2014-12-29T21:00:37+08:00</updated>
+    <id>http://roulette74.github.io/blog/2014/12/29/octopress-useful-command</id>
+    <content type="html"><![CDATA[<p>Setup Octopress:</p>
+
+<pre><code>&gt; git clone git://github.com/imathis/octopress.git octopress
+&gt; cd octopress
+&gt; gem install bundler
+&gt; rbenv rehash # If you use rbenv, rehash to be able to run the bundle command
+&gt; bunde install
+&gt; rake install
+&gt; # create a new github repository called &lt;username&gt;.github.io
+&gt; rake setup_github_pages
+&gt; &gt; git@github.com:&lt;username&gt;/&lt;username&gt;.github.io.git
+&gt; 
+</code></pre>
+
+<p>Generate new post(The markdown fill will be created at source/_posts):</p>
+
+<pre><code>&gt; rake new_post["octopress useful command"]
+&gt; rake new_page[super-awesome/page.html]
+</code></pre>
+
+<p>Generate content:</p>
+
+<pre><code>&gt; rake generate
+</code></pre>
+
+<p>Preview content:</p>
+
+<pre><code>&gt; rake preview
+</code></pre>
+
+<p>Deploy your blog content:</p>
+
+<pre><code>&gt; rake deploy
+</code></pre>
+
+<p>Don&rsquo;t forget to push your source code:</p>
+
+<pre><code>&gt; git add.
+&gt; git commit -m 'commit message'
+&gt; git push origin source
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Vim Navigation]]></title>
