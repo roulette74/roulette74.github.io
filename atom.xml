@@ -4,7 +4,7 @@
   <title><![CDATA[Roulette74]]></title>
   <link href="http://roulette74.github.io/atom.xml" rel="self"/>
   <link href="http://roulette74.github.io/"/>
-  <updated>2014-12-29T20:50:45+08:00</updated>
+  <updated>2014-12-29T20:56:48+08:00</updated>
   <id>http://roulette74.github.io/</id>
   <author>
     <name><![CDATA[Roulette]]></name>
@@ -12,5 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Vim Navigation]]></title>
+    <link href="http://roulette74.github.io/blog/2014/12/29/vim-navigation/"/>
+    <updated>2014-12-29T20:52:38+08:00</updated>
+    <id>http://roulette74.github.io/blog/2014/12/29/vim-navigation</id>
+    <content type="html"><![CDATA[<ul>
+<li>Ctrl u: move screen up &frac12; page</li>
+<li>Ctrl d: move screen down &frac12; page</li>
+<li>Ctrl b: move screen up 1 page</li>
+<li>Ctrl f: move screen down 1 page</li>
+<li>zz: move current line to the middle of the screen</li>
+<li>zt: move current line to the top of the screen</li>
+<li>zb: move current line to the bottom of the screen&#8221;</li>
+<li>H: move cursor to the top of the screen</li>
+<li>M: move cursor to the middle of the screen&#8221;</li>
+<li>L: move cursor to the bottom of the screen</li>
+</ul>
+
+]]></content>
+  </entry>
   
 </feed>
