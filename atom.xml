@@ -4,7 +4,7 @@
   <title><![CDATA[Roulette74]]></title>
   <link href="http://roulette74.github.io/atom.xml" rel="self"/>
   <link href="http://roulette74.github.io/"/>
-  <updated>2014-12-29T21:22:15+08:00</updated>
+  <updated>2014-12-29T21:23:47+08:00</updated>
   <id>http://roulette74.github.io/</id>
   <author>
     <name><![CDATA[Roulette]]></name>
@@ -48,7 +48,7 @@
 <pre><code>&gt; rake preview
 </code></pre>
 
-<p>Deploy your blog content:</p>
+<p>Deploy your blog content (first deploy require around 30 minutes to create on <username>.github.io):</p>
 
 <pre><code>&gt; rake deploy
 </code></pre>
