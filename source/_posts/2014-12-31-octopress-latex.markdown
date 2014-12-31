@@ -73,7 +73,7 @@ take $\sqrt{\frac{1}{2}}$ cup of sugar, $\dots$
 
 $\sum_{i=1}^{10} t_i$
 
-  $\sum_{i=1}^{10} t_i$
+    $\sum_{i=1}^{10} t_i$
 
 $$\sum_{i=1}^{10} t_i$$
 
