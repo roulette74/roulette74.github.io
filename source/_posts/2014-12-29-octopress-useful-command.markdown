@@ -37,7 +37,7 @@ Deploy your blog content (first deploy require around 30 minutes to create on <u
 
 Don't forget to push your source code:
 
-    > git add.
+    > git add .
     > git commit -m 'commit message'
     > git push origin source
 
