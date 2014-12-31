@@ -4,7 +4,7 @@
   <title><![CDATA[Roulette74]]></title>
   <link href="http://roulette74.github.io/atom.xml" rel="self"/>
   <link href="http://roulette74.github.io/"/>
-  <updated>2014-12-31T15:04:45+08:00</updated>
+  <updated>2014-12-31T21:22:59+08:00</updated>
   <id>http://roulette74.github.io/</id>
   <author>
     <name><![CDATA[Roulette]]></name>
@@ -20,7 +20,13 @@
     <id>http://roulette74.github.io/blog/2014/12/31/octopress-latex</id>
     <content type="html"><![CDATA[<p><a href="http://dreamrunner.org/blog/2014/03/09/octopresszhong-shi-yong-latexxie-shu-xue-gong-shi/">How to switch from rdiscount to kramdown in octopress</a><br />
 <a href="http://kramdown.gettalong.org">Kramdown Syntax</a><br />
-段内插入LaTeX代码是这样的：$\exp(-\frac{x^2}{2})$，试试看看吧</p>
+<a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX for Mathematics symbol</a></p>
+
+<h2 id="latex-example">Latex Example</h2>
+<p>inline $\LaTeX$: $\exp(-\frac{x^2}{2})$</p>
+
+<pre><code>inline $\LaTeX$: $\exp(-\frac{x^2}{2})$
+</code></pre>
 
 <script type="math/tex; mode=display">% &lt;![CDATA[
 
@@ -30,6 +36,86 @@
 \mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
 \end{align}
  %]]&gt;</script>
+
+<pre><code>$$
+\begin{align}
+\mbox{Union: } &amp; A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
+\mbox{Concatenation: } &amp; A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
+\mbox{Star: } &amp; A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
+\end{align}
+$$
+</code></pre>
+
+<p>$\exp(-\frac{x^2}{2})$</p>
+
+<pre><code>$\exp(-\frac{x^2}{2})$
+</code></pre>
+
+<p>$\alpha, \beta, \gamma, \Gamma, \pi, \Pi, \phi, \varphi, \Phi$</p>
+
+<pre><code>$\alpha, \beta, \gamma, \Gamma, \pi, \Pi, \phi, \varphi, \Phi$
+</code></pre>
+
+<p>$\cos(2\theta) = \cos^2\theta - \sin^2\theta$</p>
+
+<pre><code>$\cos(2\theta) = \cos^2\theta - \sin^2\theta$
+</code></pre>
+
+<script type="math/tex; mode=display">\lim_{x \to \infty} \exp(-x) = 0</script>
+
+<pre><code>$$\lim_{x \to \infty} \exp(-x) = 0$$       # $$ means display mode
+</code></pre>
+
+<p>$x \equiv a \pmod b$</p>
+
+<pre><code>$x \equiv a \pmod b$
+</code></pre>
+
+<p>$k<em>{n+1} + n^2 + k</em>{n^2} - k_{n-1}$</p>
+
+<pre><code>$k_{n+1} + n^2 + k_{n^2} - k_{n-1}$
+</code></pre>
+
+<p>$k_{n+1} + n^2 + k_n^2 + k_n$</p>
+
+<pre><code>$k_{n+1} + n^2 + k_n^2 + k_n$
+</code></pre>
+
+<p>$n^{22}$</p>
+
+<pre><code>$n^{22}$
+</code></pre>
+
+<p>$f(n) = n^5 + 4n^2 + 2|_{n=17}$</p>
+
+<pre><code>$f(n) = n^5 + 4n^2 + 2\|_{n=17}$
+</code></pre>
+
+<p>take $\sqrt{\frac{1}{2}}$ cup of sugar, $\dots$</p>
+
+<pre><code>take $\sqrt{\frac{1}{2}}$ cup of sugar, $\dots$
+</code></pre>
+
+<p>$\sum_{i=1}^{10} t_i$</p>
+
+<p>$\sum_{i=1}^{10} t_i$</p>
+
+<script type="math/tex; mode=display">\sum_{i=1}^{10} t_i</script>
+
+<pre><code>$$\sum_{i=1}^{10} t_i$$
+</code></pre>
+
+<p>$\sum_{\substack{0&lt;i&lt;m \ 0&lt;j&lt;n}}P(i,j)$</p>
+
+<pre><code>$\sum_{\substack{0&lt;i&lt;m \\ 0&lt;j&lt;n}}P(i,j)$
+</code></pre>
+
+<script type="math/tex; mode=display">% &lt;![CDATA[
+\sum_{\substack{0<i<m \\ 0<j<n}}P(i,j) %]]&gt;</script>
+
+<pre><code>$$\sum_{\substack{0&lt;i&lt;m \\ 0&lt;j&lt;n}}P(i,j)$$
+</code></pre>
+
 ]]></content>
   </entry>
   
