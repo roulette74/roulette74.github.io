@@ -9,10 +9,9 @@
   <meta name="author" content="Roulette">
 
   
-  <meta name="description" content="Setup Octopress: &gt; git clone git://github.com/imathis/octopress.git octopress
-&gt; cd octopress
-&gt; gem install bundler
-&gt; rbenv rehash # If &hellip;">
+  <meta name="description" content="How to switch from rdiscount to kramdown in octopress
+Kramdown Syntax
+段内插入LaTeX代码是这样的：$\exp(-\frac{x^2}{2})$，试试看看吧 ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -32,6 +31,23 @@
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
 
   
 
@@ -74,6 +90,46 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/12/31/octopress-latex/">Octopress Latex</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-12-31T14:46:46+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>31</span><span class='date-suffix'>st</span>, <span class='date-year'>2014</span></span> <span class='time'>2:46 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://dreamrunner.org/blog/2014/03/09/octopresszhong-shi-yong-latexxie-shu-xue-gong-shi/">How to switch from rdiscount to kramdown in octopress</a><br />
+<a href="http://kramdown.gettalong.org">Kramdown Syntax</a><br />
+段内插入LaTeX代码是这样的：$\exp(-\frac{x^2}{2})$，试试看看吧</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+
+\begin{align}
+\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
+\mbox{Concatenation: } & A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
+\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
+\end{align}
+ %]]></script>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/12/29/octopress-useful-command/">Octopress Useful Command</a></h1>
     
     
@@ -101,12 +157,9 @@
 &gt; # create a new github repository called &lt;username&gt;.github.io
 &gt; rake setup_github_pages
 &gt; &gt; git@github.com:&lt;username&gt;/&lt;username&gt;.github.io.git
-&gt; 
-</code></pre>
+&gt;  Generate new post(The markdown fill will be created at source/_posts):
 
-<p>Generate new post(The markdown fill will be created at source/_posts):</p>
-
-<pre><code>&gt; rake new_post["octopress useful command"]
+&gt; rake new_post["octopress useful command"]
 &gt; rake new_page[super-awesome/page.html]
 </code></pre>
 
@@ -120,17 +173,18 @@
 <pre><code>&gt; rake preview
 </code></pre>
 
-<p>Deploy your blog content (first deploy require around 30 minutes to create on <username>.github.io):</p>
+<p>Deploy your blog content (first deploy require around 30 minutes to create on <username>.github.io):</username></p>
 
 <pre><code>&gt; rake deploy
 </code></pre>
 
-<p>Don&rsquo;t forget to push your source code:</p>
+<p>Don’t forget to push your source code:</p>
 
 <pre><code>&gt; git add.
 &gt; git commit -m 'commit message'
 &gt; git push origin source
 </code></pre>
+
 </div>
   
   
@@ -160,16 +214,16 @@
 
 
   <div class="entry-content"><ul>
-<li>Ctrl u: move screen up &frac12; page</li>
-<li>Ctrl d: move screen down &frac12; page</li>
-<li>Ctrl b: move screen up 1 page</li>
-<li>Ctrl f: move screen down 1 page</li>
-<li>zz: move current line to the middle of the screen</li>
-<li>zt: move current line to the top of the screen</li>
-<li>zb: move current line to the bottom of the screen&#8221;</li>
-<li>H: move cursor to the top of the screen</li>
-<li>M: move cursor to the middle of the screen&#8221;</li>
-<li>L: move cursor to the bottom of the screen</li>
+  <li>Ctrl u: move screen up 1/2 page</li>
+  <li>Ctrl d: move screen down 1/2 page</li>
+  <li>Ctrl b: move screen up 1 page</li>
+  <li>Ctrl f: move screen down 1 page</li>
+  <li>zz: move current line to the middle of the screen</li>
+  <li>zt: move current line to the top of the screen</li>
+  <li>zb: move current line to the bottom of the screen”</li>
+  <li>H: move cursor to the top of the screen</li>
+  <li>M: move cursor to the middle of the screen”</li>
+  <li>L: move cursor to the bottom of the screen</li>
 </ul>
 
 </div>
@@ -190,6 +244,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/12/31/octopress-latex/">Octopress Latex</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/12/29/octopress-useful-command/">Octopress Useful Command</a>

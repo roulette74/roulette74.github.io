@@ -33,6 +33,23 @@
 <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
   
 
 </head>
@@ -98,12 +115,9 @@
 &gt; # create a new github repository called &lt;username&gt;.github.io
 &gt; rake setup_github_pages
 &gt; &gt; git@github.com:&lt;username&gt;/&lt;username&gt;.github.io.git
-&gt; 
-</code></pre>
+&gt;  Generate new post(The markdown fill will be created at source/_posts):
 
-<p>Generate new post(The markdown fill will be created at source/_posts):</p>
-
-<pre><code>&gt; rake new_post["octopress useful command"]
+&gt; rake new_post["octopress useful command"]
 &gt; rake new_page[super-awesome/page.html]
 </code></pre>
 
@@ -117,17 +131,18 @@
 <pre><code>&gt; rake preview
 </code></pre>
 
-<p>Deploy your blog content (first deploy require around 30 minutes to create on <username>.github.io):</p>
+<p>Deploy your blog content (first deploy require around 30 minutes to create on <username>.github.io):</username></p>
 
 <pre><code>&gt; rake deploy
 </code></pre>
 
-<p>Don&rsquo;t forget to push your source code:</p>
+<p>Don’t forget to push your source code:</p>
 
 <pre><code>&gt; git add.
 &gt; git commit -m 'commit message'
 &gt; git push origin source
 </code></pre>
+
 </div>
 
 
@@ -163,6 +178,8 @@
         <a class="basic-alignment left" href="/blog/2014/12/29/vim-navigation/" title="Previous Post: Vim Navigation">&laquo; Vim Navigation</a>
       
       
+        <a class="basic-alignment right" href="/blog/2014/12/31/octopress-latex/" title="Next Post: Octopress latex">Octopress latex &raquo;</a>
+      
     </p>
   </footer>
 </article>
@@ -174,6 +191,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/12/31/octopress-latex/">Octopress Latex</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/12/29/octopress-useful-command/">Octopress Useful Command</a>
