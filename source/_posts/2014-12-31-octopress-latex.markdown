@@ -4,7 +4,7 @@ title: "Octopress LaTeX"
 date: 2014-12-31 14:46:46 +0800
 comments: true
 sharing: true
-categories: 
+categories: "Octopress"
 ---
 [How to switch from rdiscount to kramdown in octopress](http://dreamrunner.org/blog/2014/03/09/octopresszhong-shi-yong-latexxie-shu-xue-gong-shi/)\\
 [Kramdown Syntax](http://kramdown.gettalong.org)\\
