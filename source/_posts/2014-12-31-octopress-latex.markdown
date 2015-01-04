@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Octopress latex"
+title: "Octopress LaTeX"
 date: 2014-12-31 14:46:46 +0800
 comments: true
 sharing: true
