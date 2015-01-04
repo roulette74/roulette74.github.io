@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Roulette74]]></title>
-  <link href="http://roulette74.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Octopress | Roulette74]]></title>
+  <link href="http://roulette74.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://roulette74.github.io/"/>
   <updated>2015-01-04T21:40:58+08:00</updated>
   <id>http://roulette74.github.io/</id>
@@ -116,74 +116,6 @@ $$
 
 <pre><code>$$\sum_{\substack{0&lt;i&lt;m \\ 0&lt;j&lt;n}}P(i,j)$$
 </code></pre>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Octopress Useful Command]]></title>
-    <link href="http://roulette74.github.io/blog/2014/12/29/octopress-useful-command/"/>
-    <updated>2014-12-29T21:00:37+08:00</updated>
-    <id>http://roulette74.github.io/blog/2014/12/29/octopress-useful-command</id>
-    <content type="html"><![CDATA[<p>Setup Octopress:</p>
-
-<pre><code>&gt; git clone git://github.com/imathis/octopress.git octopress
-&gt; cd octopress
-&gt; gem install bundler
-&gt; rbenv rehash # If you use rbenv, rehash to be able to run the bundle command
-&gt; bunde install
-&gt; rake install
-&gt; # create a new github repository called &lt;username&gt;.github.io
-&gt; rake setup_github_pages
-&gt; &gt; git@github.com:&lt;username&gt;/&lt;username&gt;.github.io.git
-&gt;  Generate new post(The markdown fill will be created at source/_posts):
-
-&gt; rake new_post["octopress useful command"]
-&gt; rake new_page[super-awesome/page.html]
-</code></pre>
-
-<p>Generate content:</p>
-
-<pre><code>&gt; rake generate
-</code></pre>
-
-<p>Preview content:</p>
-
-<pre><code>&gt; rake preview
-</code></pre>
-
-<p>Deploy your blog content (first deploy require around 30 minutes to create on <username>.github.io):</username></p>
-
-<pre><code>&gt; rake deploy
-</code></pre>
-
-<p>Don’t forget to push your source code:</p>
-
-<pre><code>&gt; git add .
-&gt; git commit -m 'commit message'
-&gt; git push origin source
-</code></pre>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Vim Navigation]]></title>
-    <link href="http://roulette74.github.io/blog/2014/12/29/vim-navigation/"/>
-    <updated>2014-12-29T20:52:38+08:00</updated>
-    <id>http://roulette74.github.io/blog/2014/12/29/vim-navigation</id>
-    <content type="html"><![CDATA[<ul>
-  <li>Ctrl u: move screen up 1/2 page</li>
-  <li>Ctrl d: move screen down 1/2 page</li>
-  <li>Ctrl b: move screen up 1 page</li>
-  <li>Ctrl f: move screen down 1 page</li>
-  <li>zz: move current line to the middle of the screen</li>
-  <li>zt: move current line to the top of the screen</li>
-  <li>zb: move current line to the bottom of the screen”</li>
-  <li>H: move cursor to the top of the screen</li>
-  <li>M: move cursor to the middle of the screen”</li>
-  <li>L: move cursor to the bottom of the screen</li>
-</ul>
 
 ]]></content>
   </entry>
